@@ -1,0 +1,216 @@
+<ht1><!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Products - Variety Jewellers</title>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Roboto&display=swap" rel="stylesheet">
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Roboto', sans-serif;
+            background-color: #fff8f0;
+            color: #333;
+        }
+        header {
+            background: linear-gradient(90deg, #d4af37, #f5e1b7);
+            padding: 20px 40px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        header h1 {
+            font-family: 'Playfair Display', serif;
+            color: #fff;
+            font-size: 32px;
+        }
+        nav a {
+            margin-left: 20px;
+            font-weight: bold;
+            color: #fff;
+        }
+        nav a:hover {
+            color: #333;
+        }
+
+        section {
+            padding: 40px 20px;
+            text-align: center;
+        }
+        section h2 {
+            font-family: 'Playfair Display', serif;
+            font-size: 36px;
+            margin-bottom: 30px;
+        }
+
+        .product-grid {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 30px;
+        }
+        .product {
+            background: #fff;
+            border-radius: 10px;
+            box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+            padding: 20px;
+            width: 220px;
+            transition: transform 0.3s;
+        }
+        .product img {
+            width: 100%;
+            border-radius: 10px;
+        }
+        .product h3 {
+            margin: 15px 0 10px;
+            font-family: 'Playfair Display', serif;
+        }
+        .product p {
+            font-size: 14px;
+            color: #666;
+        }
+        .add-cart {
+            margin-top: 10px;
+            background-color: #d4af37;
+            color: white;
+            border: none;
+            padding: 10px 15px;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: 0.3s;
+        }
+        .add-cart:hover {
+            background-color: #b38b2f;
+        }
+
+        footer {
+            background-color: #d4af37;
+            padding: 20px;
+            text-align: center;
+            color: #fff;
+            margin-top: 40px;
+        }
+
+        @media(max-width: 768px) {
+            .product-grid {
+                flex-direction: column;
+                align-items: center;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Header -->
+    <header>
+        <h1>Variety Jewellers</h1>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="about.html">About Us</a>
+            <a href="product.html">Products</a>
+            <a href="#">Contact</a>
+        </nav>
+    </header>
+
+    <!-- Earrings Section -->
+    <section>
+        <h2>Stainless Earrings</h2>
+        <div class="product-grid">
+            <div class="product">
+                <img src="images/earrings1.jpg" alt="Earrings">
+                <h3>Elegant Drop Earrings</h3>
+                <p>Minimalist stainless steel design for everyday wear.</p>
+                <button class="add-cart">Add to Cart</button>
+            </div>
+            <div class="product">
+                <img src="images/earrings2.jpg" alt="Earrings">
+                <h3>Stud Earrings</h3>
+                <p>Classic and chic stainless steel studs.</p>
+                <button class="add-cart">Add to Cart</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Rings Section -->
+    <section>
+        <h2>Stainless Rings</h2>
+        <div class="product-grid">
+            <div class="product">
+                <img src="images/ring1.jpg" alt="Rings">
+                <h3>Classic Band Ring</h3>
+                <p>Simple, elegant stainless steel ring for all occasions.</p>
+                <button class="add-cart">Add to Cart</button>
+            </div>
+            <div class="product">
+                <img src="images/ring2.jpg" alt="Rings">
+                <h3>Designer Ring</h3>
+                <p>Stylish ring with unique patterns for statement look.</p>
+                <button class="add-cart">Add to Cart</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Bangles Section -->
+    <section>
+        <h2>Bangles</h2>
+        <div class="product-grid">
+            <div class="product">
+                <img src="images/bangles1.jpg" alt="Bangles">
+                <h3>Minimal Bangles</h3>
+                <p>Lightweight and elegant stainless bangles.</p>
+                <button class="add-cart">Add to Cart</button>
+            </div>
+            <div class="product">
+                <img src="images/bangles2.jpg" alt="Bangles">
+                <h3>Designer Bangles</h3>
+                <p>Bold and stylish bangles for special occasions.</p>
+                <button class="add-cart">Add to Cart</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Waist Chains Section -->
+    <section>
+        <h2>Waist Chains</h2>
+        <div class="product-grid">
+            <div class="product">
+                <img src="images/waist-chain1.jpg" alt="Waist Chains">
+                <h3>Elegant Waist Chain</h3>
+                <p>Traditional and modern stainless steel design.</p>
+                <button class="add-cart">Add to Cart</button>
+            </div>
+            <div class="product">
+                <img src="images/waist-chain2.jpg" alt="Waist Chains">
+                <h3>Designer Waist Chain</h3>
+                <p>Statement piece to complement ethnic outfits.</p>
+                <button class="add-cart">Add to Cart</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Necklaces Section -->
+    <section>
+        <h2>Necklaces</h2>
+        <div class="product-grid">
+            <div class="product">
+                <img src="images/necklace1.jpg" alt="Necklaces">
+                <h3>Minimal Necklace</h3>
+                <p>Lightweight stainless steel necklace for casual wear.</p>
+                <button class="add-cart">Add to Cart</button>
+            </div>
+            <div class="product">
+                <img src="images/necklace2.jpg" alt="Necklaces">
+                <h3>Heavy Statement Necklace</h3>
+                <p>Elegant piece for weddings and special occasions.</p>
+                <button class="add-cart">Add to Cart</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        &copy; 2026 Variety Jewellers | Contact: +977-9800000000 | Butwal, Nepal
+    </footer>
+
+</body>
+</html></ht1>
