@@ -1,153 +1,368 @@
-</h1><!DOCTYPE html>
+<ht1> <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<title>Variety Jewellery</title>
-<style>
-body {
-    margin: 0;
-    font-family: Arial, sans-serif;
-    background: #fff8f5;
-}
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lumina | Elegant Jewelry</title>
+    <!-- Google Fonts for Elegant Look -->
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
+    <!-- Font Awesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    
+    <style>
+        /* --- CSS STYLES --- */
+        :root {
+            --primary-gold: #D4AF37;
+            --primary-silver: #C0C0C0;
+            --dark-bg: #1a1a1a;
+            --light-bg: #f9f9f9;
+            --text-color: #333;
+            --white: #ffffff;
+            --accent-red: #e74c3c;
+        }
 
-header {
-    background: #b76e79;
-    color: white;
-    padding: 20px;
-    text-align: center;
-}
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
 
-nav {
-    background: #f2c4c4;
-    padding: 10px;
-    text-align: center;
-}
+        body {
+            font-family: 'Lato', sans-serif;
+            background-color: var(--light-bg);
+            color: var(--text-color);
+            line-height: 1.6;
+        }
 
-nav a {
-    text-decoration: none;
-    color: #4b1f1f;
-    margin: 0 15px;
-    font-weight: bold;
-}
+        h1, h2, h3 {
+            font-family: 'Playfair Display', serif;
+        }
 
-.hero {
-    background: url("https://images.unsplash.com/photo-1600185365926-3a2ce3cdb9eb") center/cover;
-    height: 300px;
-    color: white;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-size: 36px;
-    font-weight: bold;
-}
+        /* Header */
+        header {
+            background-color: var(--white);
+            padding: 20px 5%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
 
-.section {
-    padding: 30px;
-    text-align: center;
-}
+        .logo {
+            font-size: 28px;
+            font-weight: 700;
+            color: var(--dark-bg);
+            letter-spacing: 1px;
+        }
 
-.products {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px,1fr));
-    gap: 20px;
-}
+        .logo span {
+            color: var(--primary-gold);
+        }
 
-.card {
-    background: white;
-    border-radius: 10px;
-    padding: 15px;
-    box-shadow: 0 0 10px rgba(0,0,0,0.1);
-}
+        nav ul {
+            list-style: none;
+            display: flex;
+            gap: 25px;
+        }
 
-.card img {
-    width: 100%;
-    border-radius: 10px;
-}
+        nav a {
+            text-decoration: none;
+            color: var(--text-color);
+            font-weight: 700;
+            text-transform: uppercase;
+            font-size: 14px;
+            transition: 0.3s;
+        }
 
-footer {
-    background: #b76e79;
-    color: white;
-    text-align: center;
-    padding: 15px;
-}
-</style>
+        nav a:hover {
+            color: var(--primary-gold);
+        }
+
+        .cart-icon {
+            position: relative;
+            cursor: pointer;
+        }
+
+        .cart-count {
+            position: absolute;
+            top: -8px;
+            right: -8px;
+            background-color: var(--primary-gold);
+            color: white;
+            font-size: 10px;
+            width: 18px;
+            height: 18px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        /* Hero Section */
+        .hero {
+            height: 80vh;
+            background: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url('https://images.unsplash.com/photo-1515562141207-7a88fb7ce338?ixlib=rb-1.2.1&auto=format&fit=crop&w=1950&q=80');
+            background-size: cover;
+            background-position: center;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            color: var(--white);
+        }
+
+        .hero h1 {
+            font-size: 60px;
+            margin-bottom: 20px;
+        }
+
+        .hero p {
+            font-size: 20px;
+            margin-bottom: 30px;
+            max-width: 600px;
+        }
+
+        .btn {
+            padding: 15px 40px;
+            background-color: var(--primary-gold);
+            color: var(--white);
+            border: none;
+            font-size: 16px;
+            font-weight: bold;
+            text-transform: uppercase;
+            cursor: pointer;
+            transition: 0.3s;
+            text-decoration: none;
+        }
+
+        .btn:hover {
+            background-color: #b5952f;
+        }
+
+        /* Products Section */
+        .container {
+            padding: 60px 5%;
+        }
+
+        .section-title {
+            text-align: center;
+            font-size: 40px;
+            margin-bottom: 50px;
+            color: var(--dark-bg);
+        }
+
+        .filters {
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+            margin-bottom: 40px;
+        }
+
+        .filter-btn {
+            padding: 10px 25px;
+            border: 1px solid var(--primary-gold);
+            background: transparent;
+            color: var(--primary-gold);
+            cursor: pointer;
+            font-weight: bold;
+            transition: 0.3s;
+        }
+
+        .filter-btn.active, .filter-btn:hover {
+            background: var(--primary-gold);
+            color: white;
+        }
+
+        .product-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 30px;
+        }
+
+        /* Product Card */
+        .product-card {
+            background: var(--white);
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+            transition: transform 0.3s ease;
+            position: relative;
+        }
+
+        .product-card:hover {
+            transform: translateY(-5px);
+        }
+
+        .badge {
+            position: absolute;
+            top: 15px;
+            left: 15px;
+            background-color: var(--accent-red);
+            color: white;
+            padding: 5px 10px;
+            font-size: 12px;
+            font-weight: bold;
+            border-radius: 4px;
+            z-index: 10;
+        }
+
+        .product-image {
+            width: 100%;
+            height: 300px;
+            object-fit: cover;
+            border-bottom: 1px solid #eee;
+        }
+
+        .product-info {
+            padding: 20px;
+            text-align: center;
+        }
+
+        .category {
+            color: #888;
+            font-size: 12px;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            margin-bottom: 5px;
+        }
+
+        .product-title {
+            font-size: 18px;
+            font-weight: 700;
+            margin-bottom: 10px;
+        }
+
+        .price-box {
+            margin-bottom: 15px;
+        }
+
+        .current-price {
+            font-size: 20px;
+            font-weight: bold;
+            color: var(--primary-gold);
+        }
+
+        .old-price {
+            text-decoration: line-through;
+            color: #999;
+            font-size: 14px;
+            margin-left: 10px;
+        }
+
+        .stock-info {
+            font-size: 12px;
+            color: var(--accent-red);
+            margin-bottom: 15px;
+            font-weight: bold;
+        }
+
+        .add-btn {
+            width: 100%;
+            padding: 12px;
+            background-color: var(--dark-bg);
+            color: white;
+            border: none;
+            cursor: pointer;
+            font-weight: bold;
+            text-transform: uppercase;
+            transition: 0.3s;
+        }
+
+        .add-btn:hover {
+            background-color: var(--primary-gold);
+        }
+
+        /* Footer */
+        footer {
+            background-color: var(--dark-bg);
+            color: white;
+            text-align: center;
+            padding: 40px 0;
+            margin-top: 50px;
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            .hero h1 { font-size: 40px; }
+            nav ul { display: none; } /* Simple hide for mobile demo */
+        }
+    </style>
 </head>
-
 <body>
 
-<header>
-<h1>Variety Jewellery</h1>
-<p>From Minimal to Heavy Jewellery</p>
-</header>
+    <!-- HEADER -->
+    <header>
+        <div class="logo">Lumina<span>.</span></div>
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#shop">Shop</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+        <div class="cart-icon" onclick="alert('Cart feature coming soon!')">
+            <i class="fas fa-shopping-bag fa-lg"></i>
+            <span class="cart-count" id="cart-count">0</span>
+        </div>
+    </header>
 
-<nav>
-<a href="#rings">Rings</a>
-<a href="#earrings">Earrings</a>
-<a href="#necklaces">Necklaces</a>
-<a href="#styles">Styles</a>
-</nav>
+    <!-- HERO -->
+    <section class="hero">
+        <h1>Adorn Yourself with Elegance</h1>
+        <p>Discover our exclusive collection of Gold Plated Stainless Steel and Sterling Silver Minimalist Jewelry.</p>
+        <a href="#shop" class="btn">Shop Collection</a>
+    </section>
 
-<div class="hero">
-Shine With Elegance ✨
-</div>
+    <!-- SHOP SECTION -->
+    <section class="container" id="shop">
+        <h2 class="section-title">Our Collection</h2>
+        
+        <!-- Filters -->
+        <div class="filters">
+            <button class="filter-btn active" onclick="filterProducts('all')">All</button>
+            <button class="filter-btn" onclick="filterProducts('gold')">Gold Collection</button>
+            <button class="filter-btn" onclick="filterProducts('silver')">Silver Minimal</button>
+        </div>
 
-<div class="section" id="rings">
-<h2>Stainless Steel Rings</h2>
-<div class="products">
-<div class="card">
-<img src="https://images.unsplash.com/photo-1599643478518-a784e5dc4c8f">
-<p>Minimal Ring</p>
-</div>
-<div class="card">
-<img src="https://images.unsplash.com/photo-1602526219025-6a77f1c7a3b6">
-<p>Designer Ring</p>
-</div>
-</div>
-</div>
+        <!-- Product Grid (Content injected via JS) -->
+        <div class="product-grid" id="product-container">
+            <!-- Products will appear here -->
+        </div>
+    </section>
 
-<div class="section" id="earrings">
-<h2>Earrings</h2>
-<div class="products">
-<div class="card">
-<img src="https://images.unsplash.com/photo-1611652022419-a9419f74343d">
-<p>Stud Earrings</p>
-</div>
-<div class="card">
-<img src="https://images.unsplash.com/photo-1618354691373-30f1b88c46a7">
-<p>Heavy Jhumka</p>
-</div>
-</div>
-</div>
+    <!-- FOOTER -->
+    <footer>
+        <h3>Lumina.</h3>
+        <p>Premium Jewelry for the Modern You</p>
+        <br>
+        <p>&copy; 2023 Lumina Jewelry. All rights reserved.</p>
+    </footer>
 
-<div class="section" id="necklaces">
-<h2>Necklaces</h2>
-<div class="products">
-<div class="card">
-<img src="https://images.unsplash.com/photo-1617038260897-41a1f14e7d41">
-<p>Minimal Necklace</p>
-</div>
-<div class="card">
-<img src="https://images.unsplash.com/photo-1585386959984-a4155228f1c2">
-<p>Bridal Necklace</p>
-</div>
-</div>
-</div>
-
-<div class="section" id="styles">
-<h2>Jewellery Styles</h2>
-<div class="products">
-<div class="card">
-<p>✔ Minimal Jewellery</p>
-<p>✔ Party Jewellery</p>
-<p>✔ Heavy Bridal Jewellery</p>
-<p>✔ Daily Wear Jewellery</p>
-</div>
-</div>
-</div>
-
-<footer>
-<p>© 2026 Variety Jewellery | Designed by You 💖</p>
-</footer>
-
-</body>
-</html>
+    <!-- JAVASCRIPT LOGIC -->
+    <script>
+        // ---------------------------------------------------------
+        // EDIT YOUR PRODUCTS HERE
+        // ---------------------------------------------------------
+        
+        const products = [
+            {
+                id: 1,
+                name: "Royal Gold Hoops",
+                category: "gold",
+                price: 350,         // Edit Price Here
+                oldPrice: 550,      // Edit Old Price Here
+                stock: 12,          // Remaining pieces
+                image: "https://images.unsplash.com/photo-1535632066927-ab7c9ab60908?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80"
+            },
+            {
+                id: 2,
+                name: "Minimalist Silver Ring",
+                category: "silver",
+                price: 180,
+                oldPrice: 250,
+                stock:</ht1>
