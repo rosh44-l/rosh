@@ -1,0 +1,184 @@
+<ht1><!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us - Variety Jewellers</title>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Roboto&display=swap" rel="stylesheet">
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Roboto', sans-serif;
+            background-color: #fff8f0;
+            color: #333;
+        }
+        header {
+            background: linear-gradient(90deg, #d4af37, #f5e1b7);
+            padding: 20px 40px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        header h1 {
+            font-family: 'Playfair Display', serif;
+            color: #fff;
+            font-size: 32px;
+        }
+        nav a {
+            margin-left: 20px;
+            font-weight: bold;
+            color: #fff;
+        }
+        nav a:hover {
+            color: #333;
+        }
+
+        section {
+            padding: 40px 20px;
+            text-align: center;
+        }
+        section h2 {
+            font-family: 'Playfair Display', serif;
+            font-size: 36px;
+            margin-bottom: 20px;
+        }
+        section p {
+            font-size: 16px;
+            max-width: 800px;
+            margin: auto;
+        }
+
+        .product-grid {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 30px;
+            margin-top: 40px;
+        }
+        .product {
+            background: #fff;
+            border-radius: 10px;
+            box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+            padding: 20px;
+            width: 220px;
+            transition: transform 0.3s;
+        }
+        .product img {
+            width: 100%;
+            border-radius: 10px;
+        }
+        .product h3 {
+            margin: 15px 0 10px;
+            font-family: 'Playfair Display', serif;
+        }
+        .product p {
+            font-size: 14px;
+            color: #666;
+        }
+        .add-cart {
+            margin-top: 10px;
+            background-color: #d4af37;
+            color: white;
+            border: none;
+            padding: 10px 15px;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: 0.3s;
+        }
+        .add-cart:hover {
+            background-color: #b38b2f;
+        }
+
+        .contact-info {
+            margin-top: 50px;
+            font-size: 16px;
+            line-height: 1.8;
+        }
+
+        footer {
+            background-color: #d4af37;
+            padding: 20px;
+            text-align: center;
+            color: #fff;
+            margin-top: 40px;
+        }
+
+        @media(max-width: 768px) {
+            .product-grid {
+                flex-direction: column;
+                align-items: center;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Header -->
+    <header>
+        <h1>Variety Jewellers</h1>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="about.html">About Us</a>
+            <a href="product.html">Products</a>
+            <a href="#">Contact</a>
+        </nav>
+    </header>
+
+    <!-- About Section -->
+    <section>
+        <h2>About Variety Jewellers</h2>
+        <p>Variety Jewellers specializes in exquisite stainless jewellery. Explore our collection of earrings, rings, bangles, waist chains, necklaces, and more. Each piece is crafted with care to combine elegance and durability.</p>
+    </section>
+
+    <!-- Product Section -->
+    <section>
+        <h2>Our Jewellery Collection</h2>
+        <div class="product-grid">
+            <div class="product">
+                <img src="images/earrings.jpg" alt="Stainless Earrings">
+                <h3>Stainless Earrings</h3>
+                <p>Minimal to elegant designs perfect for any occasion.</p>
+                <button class="add-cart">Add to Cart</button>
+            </div>
+            <div class="product">
+                <img src="images/ring.jpg" alt="Stainless Rings">
+                <h3>Stainless Rings</h3>
+                <p>Classic and trendy rings crafted for style and comfort.</p>
+                <button class="add-cart">Add to Cart</button>
+            </div>
+            <div class="product">
+                <img src="images/bangles.jpg" alt="Bangles">
+                <h3>Bangles</h3>
+                <p>Stylish bangles ranging from casual to heavy designs.</p>
+                <button class="add-cart">Add to Cart</button>
+            </div>
+            <div class="product">
+                <img src="images/waist-chain.jpg" alt="Waist Chains">
+                <h3>Waist Chains</h3>
+                <p>Elegant waist chains to complement traditional outfits.</p>
+                <button class="add-cart">Add to Cart</button>
+            </div>
+            <div class="product">
+                <img src="images/necklace.jpg" alt="Necklaces">
+                <h3>Necklaces</h3>
+                <p>From minimal to heavy necklaces that make a statement.</p>
+                <button class="add-cart">Add to Cart</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Info -->
+    <section class="contact-info">
+        <h2>Contact & Craft Location</h2>
+        <p><strong>Brand Name:</strong> Variety Jewellers</p>
+        <p><strong>Phone:</strong> +977-9800000000</p>
+        <p><strong>Craft Location:</strong> Butwal, Nepal</p>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        &copy; 2026 Variety Jewellers. All Rights Reserved.
+    </footer>
+
+</body>
+</html></ht1>
