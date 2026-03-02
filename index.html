@@ -1,184 +1,43 @@
-<ht><!DOCTYPE html>
+<ht1><!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Variety Jewellers</title>
-    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Roboto&display=swap" rel="stylesheet">
-    <style>
-        /* Global Styles */
-        body {
-            margin: 0;
-            font-family: 'Roboto', sans-serif;
-            color: #333;
-            background-color: #fff8f0;
-        }
-        a {
-            text-decoration: none;
-            color: inherit;
-        }
-
-        /* Header */
-        header {
-            background: linear-gradient(90deg, #d4af37, #f5e1b7);
-            padding: 20px 40px;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-        }
-        header h1 {
-            font-family: 'Playfair Display', serif;
-            font-size: 32px;
-            color: #fff;
-        }
-        nav a {
-            margin-left: 20px;
-            font-weight: bold;
-            color: #fff;
-            transition: 0.3s;
-        }
-        nav a:hover {
-            color: #333;
-        }
-
-        /* Hero Section */
-        .hero {
-            position: relative;
-            text-align: center;
-            color: #fff;
-        }
-        .hero img {
-            width: 100%;
-            max-height: 500px;
-            object-fit: cover;
-            filter: brightness(70%);
-        }
-        .hero-text {
-            position: absolute;
-            top: 50%;
-            left: 50%;
-            transform: translate(-50%, -50%);
-        }
-        .hero-text h2 {
-            font-family: 'Playfair Display', serif;
-            font-size: 48px;
-            margin-bottom: 10px;
-        }
-        .hero-text p {
-            font-size: 20px;
-        }
-
-        /* Product Showcase */
-        .products {
-            padding: 60px 20px;
-            text-align: center;
-        }
-        .products h2 {
-            font-family: 'Playfair Display', serif;
-            font-size: 36px;
-            margin-bottom: 40px;
-        }
-        .product-grid {
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: center;
-            gap: 30px;
-        }
-        .product {
-            background: #fff;
-            border-radius: 10px;
-            box-shadow: 0 8px 20px rgba(0,0,0,0.1);
-            padding: 20px;
-            width: 220px;
-            transition: transform 0.3s;
-        }
-        .product img {
-            width: 100%;
-            border-radius: 10px;
-        }
-        .product h3 {
-            margin: 15px 0 10px;
-            font-family: 'Playfair Display', serif;
-        }
-        .product p {
-            font-size: 14px;
-            color: #666;
-        }
-        .product:hover {
-            transform: translateY(-10px);
-        }
-
-        /* Footer */
-        footer {
-            background-color: #d4af37;
-            padding: 20px;
-            text-align: center;
-            color: #fff;
-            margin-top: 40px;
-        }
-
-        /* Responsive */
-        @media(max-width: 768px) {
-            .product-grid {
-                flex-direction: column;
-                align-items: center;
-            }
-        }
-    </style>
+    <title>Luxe & Minimal | Timeless Jewelry</title>
+    <script src="https://cdn.tailwindcss.com"></script>
 </head>
-<body>
+<body class="bg-stone-50 text-stone-800 font-sans">
+    <nav class="p-6 flex justify-between items-center bg-white shadow-sm sticky top-0 z-50">
+        <h1 class="text-2xl font-serif tracking-widest uppercase">Luxe & Minimal</h1>
+        <div class="space-x-8">
+            <a href="index.html" class="hover:text-amber-600 transition">Home</a>
+            <a href="products.html" class="hover:text-amber-600 transition">Shop</a>
+            <a href="about.html" class="hover:text-amber-600 transition">Our Story</a>
+        </div>
+    </nav>
 
-    <!-- Header -->
-    <header>
-        <h1>Variety Jewellers</h1>
-        <nav>
-            <a href="#">Home</a>
-            <a href="#">About</a>
-            <a href="#">Products</a>
-            <a href="#">Contact</a>
-        </nav>
+    <header class="h-[70vh] flex flex-col justify-center items-center text-center bg-cover bg-center" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url('https://images.unsplash.com/photo-1515562141207-7a18b5ce73f7?auto=format&fit=crop&w=1200&q=80');">
+        <h2 class="text-white text-5xl md:text-7xl font-serif mb-4">Elevate Your Everyday</h2>
+        <p class="text-white text-lg mb-8">Stainless Gold & Sterling Silver Essentials</p>
+        <a href="products.html" class="bg-white px-10 py-4 hover:bg-stone-100 transition duration-300 uppercase tracking-widest text-sm">Shop Collection</a>
     </header>
 
-    <!-- Hero Section -->
-    <section class="hero">
-        <img src="images/jewellery-hero.jpg" alt="Beautiful Jewellery">
-        <div class="hero-text">
-            <h2>Exquisite Jewellery for Every Occasion</h2>
-            <p>From minimal elegance to stunning statement pieces</p>
-        </div>
-    </section>
-
-    <!-- Product Section -->
-    <section class="products">
-        <h2>Our Collection</h2>
-        <div class="product-grid">
-            <div class="product">
-                <img src="images/ring.jpg" alt="Stainless Ring">
-                <h3>Elegant Rings</h3>
-                <p>Minimal to luxurious designs for all tastes.</p>
+    <section class="py-20 px-10 text-center">
+        <h3 class="text-3xl font-serif mb-10">Trending Now</h3>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+            <div class="group cursor-pointer">
+                <img src="https://images.unsplash.com/photo-1535632066927-ab7c9ab60908?auto=format&fit=crop&w=500&q=80" class="w-full h-80 object-cover mb-4 grayscale group-hover:grayscale-0 transition duration-500">
+                <p class="italic">The Gold Collection</p>
             </div>
-            <div class="product">
-                <img src="images/earrings.jpg" alt="Earrings">
-                <h3>Beautiful Earrings</h3>
-                <p>Trendy and classic styles for every occasion.</p>
+            <div class="group cursor-pointer">
+                <img src="https://images.unsplash.com/photo-1602810318383-e386cc2a3ccf?auto=format&fit=crop&w=500&q=80" class="w-full h-80 object-cover mb-4 grayscale group-hover:grayscale-0 transition duration-500">
+                <p class="italic">Minimalist Silver</p>
             </div>
-            <div class="product">
-                <img src="images/necklace.jpg" alt="Necklace">
-                <h3>Necklaces</h3>
-                <p>From casual wear to heavy statement pieces.</p>
-            </div>
-            <div class="product">
-                <img src="images/bracelet.jpg" alt="Bracelet">
-                <h3>Bracelets</h3>
-                <p>Delicate and stylish to complete your look.</p>
+            <div class="group cursor-pointer">
+                <img src="https://images.unsplash.com/photo-1599643478518-a784e5dc4c8f?auto=format&fit=crop&w=500&q=80" class="w-full h-80 object-cover mb-4 grayscale group-hover:grayscale-0 transition duration-500">
+                <p class="italic">Statement Pieces</p>
             </div>
         </div>
     </section>
-
-    <!-- Footer -->
-    <footer>
-        &copy; 2026 Variety Jewellers. All Rights Reserved.
-    </footer>
-
 </body>
-</html></ht>
+</html></ht1>
